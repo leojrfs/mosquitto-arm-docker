@@ -1,4 +1,4 @@
-FROM armhf/alpine:3.6
+FROM easypi/alpine-arm:3.6
 
 LABEL Description="ARM Based Eclipse Mosquitto MQTT Broker"
 
