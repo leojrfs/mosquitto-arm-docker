@@ -36,7 +36,7 @@ log_dest file /mosquitto/log/mosquitto.log
 
 **Note**: If a volume is used, the data will persist between containers.
 
-##Build
+## Build
 
 Build the image:
 
