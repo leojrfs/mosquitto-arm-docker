@@ -1,4 +1,4 @@
-# Eclipse Mosquitto v1.4.12 Docker Image
+# Eclipse Mosquitto v1.4.15 Docker Image
 
 ## Mount Points
 
@@ -17,7 +17,7 @@ When running the image, the default configuration values are used.
 To use a custom configuration file, mount a **local** configuration file to `/mosquitto/config/mosquitto.conf`
 
 ```
-docker run -it -p 1883:1883 -p 9001:9001 -v <path-to-configuration-file>:/mosquitto/config/mosquitto.conf leojrfs/mosquitto-arm:1.4.12
+docker run -it -p 1883:1883 -p 9001:9001 -v <path-to-configuration-file>:/mosquitto/config/mosquitto.conf leojrfs/mosquitto-arm:1.4.15
 ```
 
 Configuration can be changed to:
@@ -41,7 +41,7 @@ log_dest file /mosquitto/log/mosquitto.log
 Build the image:
 
 ```
-docker build -t leojrfs/mosquitto-arm:1.4.12 .
+docker build -t leojrfs/mosquitto-arm:1.4.15 .
 ```
 
 ## Run
@@ -49,7 +49,7 @@ docker build -t leojrfs/mosquitto-arm:1.4.12 .
 Run a container using the new image:
 
 ```
-docker run -it -p 1883:1883 -p 9001:9001 -v <path-to-configuration-file>:/mosquitto/config/mosquitto.conf -v /mosquitto/data -v /mosquitto/log leojrfs/mosquitto-arm:1.4.12
+docker run -it -p 1883:1883 -p 9001:9001 -v <path-to-configuration-file>:/mosquitto/config/mosquitto.conf -v /mosquitto/data -v /mosquitto/log leojrfs/mosquitto-arm:1.4.15
 ```
 
 :boom: if the mosquitto configuration (mosquitto.conf) was modified
